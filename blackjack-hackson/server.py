@@ -8,7 +8,7 @@ tickets = os.getenv("tickets").split(",")
 
 # Initialize Flask App
 app = Flask(__name__)
-cred = credentials.Certificate("datomar-hackson-firebase-adminsdk-uq2cm-7cd46a5958.json")
+cred = credentials.Certificate("./keys/datomar-hackson-firebase-adminsdk-uq2cm-7cd46a5958.json")
 fb_app = initialize_app(cred)
 
 db = firestore.client()
