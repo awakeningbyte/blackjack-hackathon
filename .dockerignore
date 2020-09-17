@@ -1,0 +1,15 @@
+.git/
+blackjack-hackson/keys/
+.ipynb_checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+
+# mypy
+.mypy_cache/
+
+# Mac OS
+*DS_Store*
+
+# JetBrains
+.idea
