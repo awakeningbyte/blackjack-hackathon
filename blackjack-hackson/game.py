@@ -1,4 +1,5 @@
 import os,sys,inspect
+from tqdm import tqdm
 from random import randint
 
 
@@ -140,6 +141,7 @@ class simulate():
 
     def simulate(self, n_games=100):
         result = {}
+        progress = tqdm(unit="games", total=n_games)
         for _ in range(n_games):
             r = self.one_game()
             #print("*", r,"\n")
@@ -152,6 +154,7 @@ class simulate():
                     result[n]=[name, x+w,y+b]
                 else:
                     result[n]=[name,w,b]
+            progress.update(1)
         output = []
         for id in result:
             name, wins, bankroll= result[id]
