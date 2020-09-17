@@ -2,7 +2,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get -y update
 RUN apt-get install -y build-essential python3.8 python3-pip python3-dev
 RUN pip3 -q install pip --upgrade
-RUN pip3 install jupyter pandas
+RUN pip3 install jupyter pandas tqdm
 RUN jupyter notebook --generate-config
 RUN echo  "c.NotebookApp.token = ''" > ~/.jupyter/jupyter_notebook_config.py
 RUN mkdir /src
