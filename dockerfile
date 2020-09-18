@@ -8,7 +8,7 @@ RUN echo  "c.NotebookApp.token = ''" > ~/.jupyter/jupyter_notebook_config.py
 RUN mkdir /src
 WORKDIR /src/
 COPY . .
-WORKDIR /src/blackjack-hackson
+WORKDIR /src/blackjack-hackathon
 
 ENV TINI_VERSION v0.6.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
