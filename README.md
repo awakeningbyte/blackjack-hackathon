@@ -1,16 +1,21 @@
 # Intro
 
-This coding competition is modified from Kaggle's awesome [Microchallenges](https://www.kaggle.com/learn/microchallenges). Participants are required to implement a gaming strategy and upload it to the judging server. All uploaded strageties will be executed together. A winner will be picked based on the performance of his/her strategy. 
-
+This coding competition is modified from Kaggle's awesome [Microchallenges](https://www.kaggle.com/learn/microchallenges). Participants are required to implement a gaming strategy and upload it to the judging server. All uploaded strageties will be executed together. A winner will be picked based on the performance of his/her strategy.
 
 # Run
+    After cloning the repo, you should pull `learningtools` submodule
 
+```
+    git submodule update --recursive --init
+```
+
+Then you can run the notebook container with the following commands
 ```
     docker build -t datomar/hackson-blackjack .
     docker run --rm -p 8888:8888 datomar/hackson-blackjack
 ```
 
-Then open a brower at http://localhost:8888, click `blackjack.ipynb`
+Open a brower at http://localhost:8888, click `blackjack.ipynb` to get started.
 
 # Blackjack Rules
 
